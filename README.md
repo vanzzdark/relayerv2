@@ -206,3 +206,27 @@ journalctl -u relayerd -f -o cat
 
 Check your wallet transaction in explorer to find the GO v2 Relayer Update Client(IBC) message:
 ![image](https://raw.githubusercontent.com/vanzzdark/relayerv2/main/striderelayer2.PNG)
+
+## FIX DISCORD ID WHICH DOESN'T APPEAR IN MEMO TX
+1.Open $HOME/.relayer/config/config.yaml
+2.On global part,you will see code like this
+```
+global:
+    api-listen-addr: :5183
+    timeout: 10s
+    memo: ""
+    light-cache-size: 20
+```
+3. You can add your discord id in memo: "". 
+E.g
+```
+global:
+    api-listen-addr: :5183
+    timeout: 10s
+    memo: "pan#7574"
+    light-cache-size: 20
+```
+4. Save, Done and restart relay service
+```
+systemctl restart relayerd
+```
