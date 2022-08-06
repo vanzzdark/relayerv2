@@ -208,8 +208,8 @@ Check your wallet transaction in explorer to find the GO v2 Relayer Update Clien
 ![image](https://raw.githubusercontent.com/vanzzdark/relayerv2/main/striderelayer2.PNG)
 
 ## FIX DISCORD ID WHICH DOESN'T APPEAR IN MEMO TX
-1.Open $HOME/.relayer/config/config.yaml
-2.On global part,you will see code like this
+1. Open $HOME/.relayer/config/config.yaml
+2. On global part,you will see code like this
 ```
 global:
     api-listen-addr: :5183
@@ -217,8 +217,7 @@ global:
     memo: ""
     light-cache-size: 20
 ```
-3. You can add your discord id in memo: "". 
-E.g
+3. You can add your discord id in memo: "". Example :
 ```
 global:
     api-listen-addr: :5183
